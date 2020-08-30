@@ -7,6 +7,8 @@
 
 package execution;
 
+import definitions.Student;
+
 import java.util.Scanner;
 
 public class FrontDesk {
@@ -18,5 +20,6 @@ public class FrontDesk {
         String studentLastName = object.nextLine();
         long studentUniversityRollNumber = object.nextLong();
         int totalBooksIssuedByStudent = object.nextInt();
+        Student studentDetails = new Student(studentFirstName, studentMiddleName, studentLastName, studentUniversityRollNumber, totalBooksIssuedByStudent);
     }
 }
