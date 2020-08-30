@@ -7,6 +7,7 @@
 
 package execution;
 
+import definitions.Library;
 import definitions.Student;
 
 import java.util.Scanner;
@@ -21,5 +22,6 @@ public class FrontDesk {
         long studentUniversityRollNumber = object.nextLong();
         int totalBooksIssuedByStudent = object.nextInt();
         Student studentDetails = new Student(studentFirstName, studentMiddleName, studentLastName, studentUniversityRollNumber, totalBooksIssuedByStudent);
+        Library libraryDetails = new Library();
     }
 }
